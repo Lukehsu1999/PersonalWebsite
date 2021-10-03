@@ -9,6 +9,16 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import ssyWebsite from "../../Assets/Projects/SSYWebsite.JPG";
+import ssyChatbot from "../../Assets/Projects/SSYChatbot.JPG";
+import arTourguide from "../../Assets/Projects/Tourguide.JPG";
+import cityHack from "../../Assets/Projects/CityHack.JPG";
+import covidApp from "../../Assets/Projects/CovidApp.JPG";
+import rewriter from "../../Assets/Projects/Rewriter.JPG";
+import traffic from "../../Assets/Projects/traffic.jpg";
+import dsc from "../../Assets/Projects/DSC_Certificate.jpg";
+import acm from "../../Assets/Projects/acm2.JPG";
+import aws from "../../Assets/Projects/AWS_certificate.jpg";
 
 function Projects() {
   return (
@@ -16,70 +26,121 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Internship <strong className="purple"> Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Below are the projects I have participated in Sik Sik Yuen,
+          I will not share the code here to protect the company's copyrights,
+          but I can share the link to the public websites.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={ssyWebsite}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="Sik Sik Yuen Website"
+              description="Sik Sik Yuen is a NGO supporting schools, hospitals, and elderly care centers across Hong Kong. I have worked on the renovation of the website for 4 months and implemeted the search mechanism. Since there's not enough documentation on Sitefinity online, I have to learn how to do indexing and filtering by myself. To make the widgets more flexible, I also study MVC design pattern and widget designers. Written in C#, Javascript, and a bit AngularJS."
+              link="https://www2.siksikyuen.org.hk/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={ssyChatbot}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Sik Sik Yuen Website Chatbot"
+              description="To make our services more accesible, I initiated this project to handle queries and other WTS-related services. The chatbot is built on Dialogflow CX with the innovative state machine design. Given that Hong Kong citizens use different languages, the chatbot supports Mandarin, Cantonese, and English. Additionally, we also built a webhook server with Node.js to handle more complex responses."
+              link="https://www2.siksikyuen.org.hk/en/index"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={arTourguide}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="Wong Tai Sin Temple AR tour guide (still in development)"
+              description="With a view to promote the historic temple, I proposed this functionality to integrate into the existing mobile app TOANET (written in React-Native). I use Unity (C#) to realize the AR objects and use Mapbox for geo-computing services such as routing and locating."
+              link="https://docs.google.com/document/d/1jyASH9IZ2ZBFTzYmoeKP9D1ZfdY0NINakDhlI5m3JN0/edit?usp=sharing"
+            />
+          </Col>
+        </Row>
+          <h1 className="project-heading">
+            My Personal and Collaborative <strong className="purple"> Projects </strong>
+          </h1>
+          <p style={{ color: "white" }}>
+            Below are the projects I build with Google Developer Student Club and my personal projects.
+          </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cityHack}
+              isBlog={false}
+              title="CityU Hackathon21 Website (DSC project)"
+              description=""
+              link="https://github.com/CityU-DSC/cityhack21"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={covidApp}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="Covid Report App (DSC project)"
+              description=""
+              link="https://github.com/CityU-DSC/covid19app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={rewriter}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              link="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="Formality Rewriter"
+              description=""
+              link="https://github.com/Lukehsu1999/Academic-and-Formality-Rewriter"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={traffic}
+              isBlog={true}
+              title="Ride-Sharing and Transferring Algorithm @ INFORMS Taipei International Conference"
+              description="Present research results as “An Efficient Algorithm for Pickup and Delivery Problems with Ride-sharing and Multiple Transfers”              "
+              link=""
+            />
+          </Col>
+        </Row>
+        <h1 className="project-heading">
+            My <strong className="purple"> Achievements </strong>
+        </h1>
+          
+        <Row>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={acm}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              link="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="ACM/ICPC Hong Kong site Certificate of Achievements"
+              description="Represent CityU to attend the ACM/ICPC contest in 2019."
+              link=""
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={dsc}
+              isBlog={false}
+              title="Google Developer Student Clubs Core Team Member"
+              description="Join the CityU DSC club and act as a core team member from 2020 to 2021."
+              link=""
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={aws}
+              isBlog={false}
+              title="AWS Certified Cloud Practitioner"
+              description="Pass the Amazon Web Service exam and receive certificate."
+              link=""
             />
           </Col>
         </Row>
