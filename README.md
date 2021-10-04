@@ -1,4 +1,8 @@
 <h2 align="center">
+  This is a Portfolio Website I cloned and modified from soumyajit.tech, the credits go to him. Please checkout his original git repo below. <br/>
+  <a href="http://soumyajit.tech/" target="_blank">soumyajit.tech</a>
+</h2>
+<h2 align="center">
   Portfolio Website - v2.0<br/>
   <a href="http://soumyajit.tech/" target="_blank">soumyajit.tech</a>
 </h2>
